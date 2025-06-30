@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMate</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Teste seus conhecimentos em matemática com o QuizMat – perguntas de lógica, cálculo, álgebra e mais!">
+    <meta name="keywords" content="quiz de matemática, perguntas de matemática, raciocínio lógico, cálculo, jogos educativos, matemática para estudantes">
+    <meta name="author" content="QuizMate">
+<title>QuizMate</title>
+
+</head>
+<body>
+     <div class="container">
+        <h1 id="quizTitle">QuizMate</h1>
+
+
+        <!-- Tela Inicial -->
+        <div id="startScreen">
+            <h2>Bem-vindo ao Meu Quiz!</h2>
+            <p>Teste seus conhecimentos e veja se você consegue acertar todas as perguntas!</p>
+
+            <!-- Botões -->
+            <button onclick="startGame()">Iniciar Jogo</button>
+            
+            <button onclick="toggleExplanation()">Como jogar?</button>
+
+<div id="explanationBox" style="display: none; margin-top: 15px;">
+    <p>
+        Este é um quiz de matemática com 20 perguntas. <br>
+        Você precisa escolher a alternativa correta para avançar. <br>
+        Se errar, o jogo reinicia. Boa sorte!
+    </p>
+</div>
+
+        </div>
+
+        <div id="gameScreen" style="display: none;">
+    <!-- Número da Fase -->
+    <div class="fase">
+        <span id="faseNumero">1</span>
+    </div>
+
+    <div id="questionBox">
+        <p id="questionText">Carregando pergunta...</p>
+        <img id="questionImage" style="max-width: 100%; display: none;" />
+    </div>
+    <div id="answers"></div>
+</div>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
